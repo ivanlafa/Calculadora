@@ -74,7 +74,7 @@ body{
 }
 
 .historialNumeros{
-    padding: 10px;
+    padding: .2rem;
     margin: 10px 100px 10px 10px;
     background-color: rgba(0,0,0, 0.3);
     border-radius: 10px;
@@ -83,4 +83,16 @@ body{
     font-size: 25px;
     font-weight: bold;
     border-color: black;
+}
+
+.tituloHistorial {
+    display: flex;
+    justify-content: space-between;
+}
+
+#limpiar{
+    background-color: rgb(197, 38, 38);
+    color: white;
+   cursor: pointer;
+   padding: 10px;
 }
