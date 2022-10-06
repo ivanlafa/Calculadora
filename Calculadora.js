@@ -2,6 +2,7 @@ const numberButton = document.getElementsByName('number');
 const operationButton = document.getElementsByName('operation');
 const equalButton = document.getElementsByName('equal')[0];
 const deleteButton = document.getElementsByName('delete')[0];
+const limpiar = document.getElementById('historial');
 
 
 var result = document.getElementById('result');
@@ -84,6 +85,14 @@ function clear() {
     operationAnterior = '';
     operation = undefined;
 }
+
+
+function limpiarhistorial() {
+    var tabla = document.getElementById('historial');
+    tabla.innerHTML = "";
+
+}
+
 
 function updateDisplay() {
     result.value = operationActual;
