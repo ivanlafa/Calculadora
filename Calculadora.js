@@ -3,6 +3,14 @@ const operationButton = document.getElementsByName('operation');
 const equalButton = document.getElementsByName('equal')[0];
 const deleteButton = document.getElementsByName('delete')[0];
 
+var operadorHistorial = document.getElementById("operadorHistorial");
+var numeroAHistorial = document.getElementById("numeroAHistorial");
+var numeroBHistorial = document.getElementById("numeroBHistorial");
+
+var valorA = 0;
+var valorB = 0;
+var resultado = 0;
+
 var result = document.getElementById('result');
 var operationActual = '';
 var operationAnterior = '';
@@ -63,7 +71,6 @@ function calcular() {
     }
     
     operationActual = calculo;
-    operationActual = 
     operation = undefined;
     operationAnterior = '';
 }
