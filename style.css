@@ -37,9 +37,9 @@ body{
     border-radius: 10px;
 }
 .output .display{
-    width: 370px;
-    height: 95px;
-    font-size: 100px;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
     font-family: 'Gugi', cursive;
     text-align: right;
     border: none;
@@ -71,4 +71,16 @@ body{
 }
 .buttons > button:hover{
     background-color: #748cab;
+}
+
+.historialNumeros{
+    padding: 10px;
+    margin: 10px 100px 10px 10px;
+    background-color: rgba(0,0,0, 0.3);
+    border-radius: 10px;
+    border-style: solid;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    border-color: black;
 }

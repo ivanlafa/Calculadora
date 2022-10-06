@@ -19,7 +19,7 @@ operationButton.forEach(function(button){
         selectOperation(button.innerText);
     })
 });
-
+//eventos
 equalButton.addEventListener('click', function(){
     calcular();
     updateDisplay();
@@ -39,7 +39,7 @@ function selectOperation(op) {
     operationAnterior = operationActual;
     operationActual = '';
 }
-
+//operaciones
 function calcular() {
     var calculo;
     const anterior = parseFloat(operationAnterior);
@@ -61,14 +61,18 @@ function calcular() {
         default:
             return;
     }
+    
     operationActual = calculo;
+    operationActual = 
     operation = undefined;
     operationAnterior = '';
 }
 
 function addNumber(num) {
-    operationActual = operationActual.toString() + num.toString();
-    updateDisplay();
+   if ( num == '.' && operationActual.toString().includes('.'))
+   return;
+   operationActual = operationActual.toString() + num.toString();
+   updateDisplay();
 }
 
 function clear() {
